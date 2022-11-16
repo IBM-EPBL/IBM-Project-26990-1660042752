@@ -3,7 +3,7 @@ import requests
 
 def by_city():
     city = input('Enter your city : ')
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=445dc379635cc332edbc1171f8f30b0d'.format(city)
+    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=83df7aa995b7b5b045587e13431eb997'.format(city)
     res = requests.get(url)
     data = res.json()
     show_data(data)
